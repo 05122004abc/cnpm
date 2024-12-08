@@ -1,0 +1,152 @@
+body, h1, h2, h3, p, div, ul, li {
+    margin: 0;
+    padding: 0;
+ }
+
+ body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #222;
+ }
+
+ .quick-view {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 18px;
+ }
+
+ .title {
+    font-size: 24px;
+    color: #222;
+    text-align: center;
+    margin-bottom: 20px;
+ }
+
+ .box {
+    /* Add your box styles here */
+ }
+
+ .image-container {
+    position: relative;
+    text-align: center;
+ }
+
+ .large-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+ }
+
+ .thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+ }
+
+ .thumbnail {
+    width: calc(20% - 4px);
+    cursor: pointer;
+    height: 60px;
+    background-size: cover;
+    margin: 0 2px 4px;
+    transition: transform 0.3s ease;
+ }
+
+ .thumbnail:hover {
+    transform: scale(1.2);
+ }
+
+ @media screen and (min-width: 768px) {
+    .thumbnail {
+       width: calc(10% - 4px);
+    }
+ }
+
+ .thumbnail-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    max-width: 700px;
+    width: 100%;
+ }
+
+ .cat,
+ .name,
+ .price,
+ .qty {
+    /* Add your styles for these elements */
+ }
+
+ .cart-btn {
+    /* Add your styles for the cart button */
+ }
+
+ .product-detail {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 6.5;
+ }
+
+ .review-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 18px;
+    margin: 20px auto 0; /* Khoảng cách 15px từ trên cùng */
+ }
+
+ .review-container h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+ }
+
+ .review {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+ }
+
+ .review p {
+    margin-top: 20px;
+ }
+
+ .user-info {
+    font-weight: bold;
+ }
+
+ .star {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    vertical-align: middle;
+ }
+
+ .star label {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    cursor: pointer;
+    padding: 0 5px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+ }
+
+ .star label:after {
+    transition: all 1s ease-out;
+    position: absolute;
+    content: "★";
+    color: orange;
+    font-size: 32px;
+ }

@@ -1,0 +1,109 @@
+      /* Áp dụng CSS cho bảng */
+      .orders-table {
+         width: 80%;
+         /* Độ rộng của bảng */
+         margin: 0 auto;
+         /* Để bảng nằm giữa trang */
+         border-collapse: collapse;
+         /* Loại bỏ khoảng trắng giữa các ô */
+         border-radius: 10px;
+         /* Bo góc toàn bộ bảng */
+         font-size: 16px;
+         /* Kích thước chữ to lên */
+      }
+
+      /* Áp dụng CSS cho header row */
+      .orders-table thead th {
+         background-color: #333;
+         /* Màu nền của header */
+         color: #fff;
+         /* Màu chữ của header */
+         text-align: center;
+         padding: 10px;
+         /* Khoảng cách bên trong các ô */
+         border: 1px solid #000;
+         /* Kẻ viền màu đen */
+      }
+
+      /* Áp dụng CSS cho data rows */
+      .orders-table tbody td {
+         padding: 10px;
+         /* Khoảng cách bên trong các ô */
+         border: 1px solid #000;
+         /* Kẻ viền màu đen */
+      }
+
+
+      /* Góc bo tròn */
+      .orders-table thead th:first-child {
+         border-top-left-radius: 10px;
+      }
+
+      .orders-table thead th:last-child {
+         border-top-right-radius: 10px;
+      }
+
+      .orders-table tbody tr:last-child td:first-child {
+         border-bottom-left-radius: 10px;
+      }
+
+      .orders-table tbody tr:last-child td:last-child {
+         border-bottom-right-radius: 10px;
+      }
+
+      .nav-links {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 20px;
+         /* Khoảng cách với phần tử bên dưới */
+      }
+
+      .nav-links a {
+         color: #333;
+         text-decoration: none;
+         transition: color 0.3s ease, font-size 0.3s ease;
+         font-size: 16px;
+         margin: 0 10px;
+         text-decoration: underline;
+      }
+
+      .nav-links a:hover {
+         color: #007bff;
+         font-size: 18px;
+      }
+
+            /* CSS */
+            .star {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               width: 100%;
+               vertical-align: middle;
+            }
+      
+            .star label {
+               height: 25px;
+               width: 25px;
+               position: relative;
+               cursor: pointer;
+               padding: 0 5px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+            }
+      
+            .star label:after {
+               transition: all 1s ease-out;
+               position: absolute;
+               content: "★";
+               color: orange;
+               font-size: 32px;
+            }
+      
+            .star input:checked+label:after,
+            .star input:checked~label:after {
+               content: "★";
+               color: gold;
+               text-shadow: 0 0 10px gold;
+            }
